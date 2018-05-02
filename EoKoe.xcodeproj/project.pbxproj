@@ -8,13 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A433520993684003EF7B7 /* AppDelegate.swift */; };
-		E43A433820993684003EF7B7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A433720993684003EF7B7 /* ViewController.swift */; };
 		E43A433B20993684003EF7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43A433920993684003EF7B7 /* Main.storyboard */; };
 		E43A433E20993684003EF7B7 /* EoKoe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E43A433C20993684003EF7B7 /* EoKoe.xcdatamodeld */; };
 		E43A434020993687003EF7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43A433F20993687003EF7B7 /* Assets.xcassets */; };
 		E43A434320993687003EF7B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43A434120993687003EF7B7 /* LaunchScreen.storyboard */; };
 		E43A434E20993688003EF7B7 /* EoKoeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A434D20993688003EF7B7 /* EoKoeTests.swift */; };
 		E43A435920993688003EF7B7 /* EoKoeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A435820993688003EF7B7 /* EoKoeUITests.swift */; };
+		E43A436A2099973C003EF7B7 /* ViewControllerCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A43692099973C003EF7B7 /* ViewControllerCreatable.swift */; };
+		E43A436C20999765003EF7B7 /* ViewCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A436B20999765003EF7B7 /* ViewCreatable.swift */; };
+		E43A436E20999B1D003EF7B7 /* ViewControllerReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A436D20999B1D003EF7B7 /* ViewControllerReusable.swift */; };
+		E43A43752099A12C003EF7B7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43742099A12C003EF7B7 /* Nimble.framework */; };
+		E43A43772099A130003EF7B7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43762099A130003EF7B7 /* Quick.framework */; };
+		E43A43782099A13A003EF7B7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43742099A12C003EF7B7 /* Nimble.framework */; };
+		E43A43792099A13A003EF7B7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43762099A130003EF7B7 /* Quick.framework */; };
+		E43A437D2099A9BE003EF7B7 /* EoKoeProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */; };
+		E46F3BE32099AC5F0026FA88 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F3BE22099AC5F0026FA88 /* Moya.framework */; };
+		E46F3BE42099AC690026FA88 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F3BE22099AC5F0026FA88 /* Moya.framework */; };
+		E46F3BE52099AC780026FA88 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F3BE22099AC5F0026FA88 /* Moya.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +47,6 @@
 /* Begin PBXFileReference section */
 		E43A433220993684003EF7B7 /* EoKoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EoKoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A433520993684003EF7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E43A433720993684003EF7B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E43A433A20993684003EF7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E43A433D20993684003EF7B7 /* EoKoe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EoKoe.xcdatamodel; sourceTree = "<group>"; };
 		E43A433F20993687003EF7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		E43A435420993688003EF7B7 /* EoKoeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EoKoeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A435820993688003EF7B7 /* EoKoeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EoKoeUITests.swift; sourceTree = "<group>"; };
 		E43A435A20993688003EF7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E43A43692099973C003EF7B7 /* ViewControllerCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCreatable.swift; sourceTree = "<group>"; };
+		E43A436B20999765003EF7B7 /* ViewCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCreatable.swift; sourceTree = "<group>"; };
+		E43A436D20999B1D003EF7B7 /* ViewControllerReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerReusable.swift; sourceTree = "<group>"; };
+		E43A43742099A12C003EF7B7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		E43A43762099A130003EF7B7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EoKoeProviderSpec.swift; sourceTree = "<group>"; };
+		E46F3BE22099AC5F0026FA88 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F3BE52099AC780026FA88 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43A43752099A12C003EF7B7 /* Nimble.framework in Frameworks */,
+				E43A43772099A130003EF7B7 /* Quick.framework in Frameworks */,
+				E46F3BE32099AC5F0026FA88 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +90,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43A43782099A13A003EF7B7 /* Nimble.framework in Frameworks */,
+				E43A43792099A13A003EF7B7 /* Quick.framework in Frameworks */,
+				E46F3BE42099AC690026FA88 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +106,7 @@
 				E43A434C20993688003EF7B7 /* EoKoeTests */,
 				E43A435720993688003EF7B7 /* EoKoeUITests */,
 				E43A433320993684003EF7B7 /* Products */,
+				E43A43732099A12C003EF7B7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,8 +123,10 @@
 		E43A433420993684003EF7B7 /* EoKoe */ = {
 			isa = PBXGroup;
 			children = (
+				E43A4368209996BA003EF7B7 /* Common */,
+				E43A436720998F68003EF7B7 /* Networking */,
+				E43A4366209979A5003EF7B7 /* App */,
 				E43A433520993684003EF7B7 /* AppDelegate.swift */,
-				E43A433720993684003EF7B7 /* ViewController.swift */,
 				E43A433920993684003EF7B7 /* Main.storyboard */,
 				E43A433F20993687003EF7B7 /* Assets.xcassets */,
 				E43A434120993687003EF7B7 /* LaunchScreen.storyboard */,
@@ -113,8 +139,9 @@
 		E43A434C20993688003EF7B7 /* EoKoeTests */ = {
 			isa = PBXGroup;
 			children = (
-				E43A434D20993688003EF7B7 /* EoKoeTests.swift */,
 				E43A434F20993688003EF7B7 /* Info.plist */,
+				E43A434D20993688003EF7B7 /* EoKoeTests.swift */,
+				E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */,
 			);
 			path = EoKoeTests;
 			sourceTree = "<group>";
@@ -128,6 +155,40 @@
 			path = EoKoeUITests;
 			sourceTree = "<group>";
 		};
+		E43A4366209979A5003EF7B7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E43A436720998F68003EF7B7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		E43A4368209996BA003EF7B7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E43A436D20999B1D003EF7B7 /* ViewControllerReusable.swift */,
+				E43A43692099973C003EF7B7 /* ViewControllerCreatable.swift */,
+				E43A436B20999765003EF7B7 /* ViewCreatable.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E43A43732099A12C003EF7B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E46F3BE22099AC5F0026FA88 /* Moya.framework */,
+				E43A43762099A130003EF7B7 /* Quick.framework */,
+				E43A43742099A12C003EF7B7 /* Nimble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +199,7 @@
 				E43A432E20993684003EF7B7 /* Sources */,
 				E43A432F20993684003EF7B7 /* Frameworks */,
 				E43A433020993684003EF7B7 /* Resources */,
+				E43A436F20999FC9003EF7B7 /* Run Script Carthage */,
 			);
 			buildRules = (
 			);
@@ -155,6 +217,7 @@
 				E43A434520993688003EF7B7 /* Sources */,
 				E43A434620993688003EF7B7 /* Frameworks */,
 				E43A434720993688003EF7B7 /* Resources */,
+				E43A43702099A05B003EF7B7 /* Run Script Carthage */,
 			);
 			buildRules = (
 			);
@@ -173,6 +236,7 @@
 				E43A435020993688003EF7B7 /* Sources */,
 				E43A435120993688003EF7B7 /* Frameworks */,
 				E43A435220993688003EF7B7 /* Resources */,
+				E43A43722099A096003EF7B7 /* Run Script Carthage */,
 			);
 			buildRules = (
 			);
@@ -254,14 +318,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E43A436F20999FC9003EF7B7 /* Run Script Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+			);
+			name = "Run Script Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		E43A43702099A05B003EF7B7 /* Run Script Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+			);
+			name = "Run Script Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		E43A43722099A096003EF7B7 /* Run Script Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+			);
+			name = "Run Script Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E43A432E20993684003EF7B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				E43A433E20993684003EF7B7 /* EoKoe.xcdatamodeld in Sources */,
-				E43A433820993684003EF7B7 /* ViewController.swift in Sources */,
+				E43A436A2099973C003EF7B7 /* ViewControllerCreatable.swift in Sources */,
+				E43A436C20999765003EF7B7 /* ViewCreatable.swift in Sources */,
 				E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */,
+				E43A436E20999B1D003EF7B7 /* ViewControllerReusable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E43A434E20993688003EF7B7 /* EoKoeTests.swift in Sources */,
+				E43A437D2099A9BE003EF7B7 /* EoKoeProviderSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +555,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YGLN95X86V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EoKoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,6 +578,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YGLN95X86V;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EoKoe/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +602,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C937H738DS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EoKoeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -496,6 +627,10 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C937H738DS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EoKoeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -516,6 +651,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C937H738DS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EoKoeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -536,6 +675,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C937H738DS;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = EoKoeUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
