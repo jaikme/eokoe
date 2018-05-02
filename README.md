@@ -3,7 +3,7 @@ A simple iOS users list app.
 
 ## Prerequisites
 
-* [Carthage][https://github.com/Carthage/Carthage]
+* [Carthage](https://github.com/Carthage/Carthage)
 * MacOS 10.13 or higher
 * Xcode 9.2 or higher
 
@@ -20,9 +20,9 @@ open EoKoe.xcodeproj
 
 ### Tech Stack
 
-- [Moya][]: Network abstraction layer written in Swift
-- [Quick][]: BDD framework for Swift
-- [Nimble][]: A Matcher Framework for Swift and Objective-C
+- [Moya](https://github.com/Moya/Moya): Network abstraction layer written in Swift
+- [Quick](https://github.com/Quick/Quick): BDD framework for Swift
+- [Nimble](https://github.com/Quick/Nimble): A Matcher Framework for Swift and Objective-C
 
 ## Tests
 
