@@ -13,7 +13,7 @@ Run this in your shell:
 
 ```sh
 git clone https://github.com/jaikme/eokoe.git
-cd eokoe.git
+cd eokoe
 carthage update --platform iOS
 open EoKoe.xcodeproj
 ```
