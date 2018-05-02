@@ -6,4 +6,19 @@
 //  Copyright © 2018 Jaime Costa Marques. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+public protocol ViewControllerReusable {
+    
+    static var identifier: String { get }
+}
+
+public extension ViewControllerReusable where Self : UIViewController {
+    
+    static var identifier: String {
+        
+        return String(describing: self)
+    }
+}
+
+extension UIViewController : ViewControllerReusable { }
