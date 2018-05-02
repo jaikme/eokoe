@@ -3,7 +3,7 @@ A simple iOS users list app.
 
 ## Prerequisites
 
-* [Carthage][carthage]
+* [Carthage][https://github.com/Carthage/Carthage]
 * MacOS 10.13 or higher
 * Xcode 9.2 or higher
 
