@@ -7,7 +7,7 @@ A simple iOS users list app.
 * MacOS 10.13 or higher
 * Xcode 9.2 or higher
 
-### Get the app running
+## Get the app running
 
 Run this in your shell:
 
@@ -18,7 +18,7 @@ carthage update --platform iOS
 open EoKoe.xcodeproj
 ```
 
-### Tech Stack
+## Tech Stack
 
 - [Moya](https://github.com/Moya/Moya): Network abstraction layer written in Swift
 - [Quick](https://github.com/Quick/Quick): BDD framework for Swift
