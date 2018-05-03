@@ -23,6 +23,8 @@ open EoKoe.xcodeproj
 - [Moya](https://github.com/Moya/Moya): Network abstraction layer written in Swift
 - [Quick](https://github.com/Quick/Quick): BDD framework for Swift
 - [Nimble](https://github.com/Quick/Nimble): A Matcher Framework for Swift and Objective-C
+- Clean Architecture. aka VIP
+- TDD
 
 ## Tests
 
