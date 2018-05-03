@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D460294209B8D1B00366879 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D460293209B8D1B00366879 /* Alamofire.framework */; };
+		5D460296209B8D2F00366879 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D460295209B8D2F00366879 /* Result.framework */; };
+		5DB65DD3209B850700B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
+		5DB65DD4209B857200B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
+		5DB65DD5209B857600B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
 		E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A433520993684003EF7B7 /* AppDelegate.swift */; };
 		E43A433B20993684003EF7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43A433920993684003EF7B7 /* Main.storyboard */; };
 		E43A433E20993684003EF7B7 /* EoKoe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E43A433C20993684003EF7B7 /* EoKoe.xcdatamodeld */; };
@@ -22,9 +27,6 @@
 		E43A43782099A13A003EF7B7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43742099A12C003EF7B7 /* Nimble.framework */; };
 		E43A43792099A13A003EF7B7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43762099A130003EF7B7 /* Quick.framework */; };
 		E43A437D2099A9BE003EF7B7 /* EoKoeProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */; };
-		E46F3BE32099AC5F0026FA88 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F3BE22099AC5F0026FA88 /* Moya.framework */; };
-		E46F3BE42099AC690026FA88 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F3BE22099AC5F0026FA88 /* Moya.framework */; };
-		E46F3BE52099AC780026FA88 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46F3BE22099AC5F0026FA88 /* Moya.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5D460293209B8D1B00366879 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		5D460295209B8D2F00366879 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		5DB65DD2209B850700B728B2 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		E43A433220993684003EF7B7 /* EoKoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EoKoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A433520993684003EF7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E43A433A20993684003EF7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,7 +69,6 @@
 		E43A43742099A12C003EF7B7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		E43A43762099A130003EF7B7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EoKoeProviderSpec.swift; sourceTree = "<group>"; };
-		E46F3BE22099AC5F0026FA88 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +76,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E46F3BE52099AC780026FA88 /* Moya.framework in Frameworks */,
+				5DB65DD3209B850700B728B2 /* Moya.framework in Frameworks */,
+				5D460294209B8D1B00366879 /* Alamofire.framework in Frameworks */,
+				5D460296209B8D2F00366879 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +88,7 @@
 			files = (
 				E43A43752099A12C003EF7B7 /* Nimble.framework in Frameworks */,
 				E43A43772099A130003EF7B7 /* Quick.framework in Frameworks */,
-				E46F3BE32099AC5F0026FA88 /* Moya.framework in Frameworks */,
+				5DB65DD4209B857200B728B2 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,7 +98,7 @@
 			files = (
 				E43A43782099A13A003EF7B7 /* Nimble.framework in Frameworks */,
 				E43A43792099A13A003EF7B7 /* Quick.framework in Frameworks */,
-				E46F3BE42099AC690026FA88 /* Moya.framework in Frameworks */,
+				5DB65DD5209B857600B728B2 /* Moya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +188,9 @@
 		E43A43732099A12C003EF7B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E46F3BE22099AC5F0026FA88 /* Moya.framework */,
+				5D460295209B8D2F00366879 /* Result.framework */,
+				5D460293209B8D1B00366879 /* Alamofire.framework */,
+				5DB65DD2209B850700B728B2 /* Moya.framework */,
 				E43A43762099A130003EF7B7 /* Quick.framework */,
 				E43A43742099A12C003EF7B7 /* Nimble.framework */,
 			);
@@ -326,6 +334,8 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 			);
 			name = "Run Script Carthage";
 			outputPaths = (
