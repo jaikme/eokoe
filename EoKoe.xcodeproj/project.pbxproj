@@ -109,7 +109,6 @@
 		E4A6F2EC209C1EA200837954 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		E4A6F2EE209C1F4500837954 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		E4A6F2F1209C29E700837954 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
-		E4A6F2F3209C2A4900837954 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		E4A6F2F5209C2D7200837954 /* UsersListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListPresenter.swift; sourceTree = "<group>"; };
 		E4A6F2F8209C2DA800837954 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		E4A6F2FD209C2EC700837954 /* UsersListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersListCell.xib; sourceTree = "<group>"; };
@@ -273,7 +272,6 @@
 			isa = PBXGroup;
 			children = (
 				E4A6F30B209C5FCE00837954 /* Kingfisher.framework */,
-				E4A6F2F3209C2A4900837954 /* ObjectMapper.framework */,
 				5D460295209B8D2F00366879 /* Result.framework */,
 				5D460293209B8D1B00366879 /* Alamofire.framework */,
 				5DB65DD2209B850700B728B2 /* Moya.framework */,
@@ -487,7 +485,6 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Moya.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = "Run Script Carthage";
