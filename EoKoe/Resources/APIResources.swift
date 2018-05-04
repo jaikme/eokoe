@@ -14,8 +14,7 @@ public struct APIResource {
     public static let contentTypeIdentifier = "Content-Type"
     public static let contentTypeValue  = "application/json"
     public static let XApiKeyIdentifier = "X-API-Key"
-    public static let XApiKey = "test"
-    public static let acceptIdentifier = "Accept"
+    public static let XApiKey = "d4735e3a265e16eee03f59718b9b5d03019c07d8b6c51f90da3a666eec13ab35"
 }
 
 public enum BaseURLType : String {
