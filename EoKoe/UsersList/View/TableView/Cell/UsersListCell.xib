@@ -19,20 +19,20 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ASP-Au-K89">
-                        <rect key="frame" x="30" y="30" width="60" height="60"/>
+                        <rect key="frame" x="30" y="15" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="6XD-gg-ar6"/>
                             <constraint firstAttribute="height" constant="60" id="KPu-3Q-HDa"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desc" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI5-OS-z1j">
-                        <rect key="frame" x="115" y="63" width="146" height="143.5"/>
+                        <rect key="frame" x="115" y="48" width="146" height="143.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bTj-Vh-uXB">
-                        <rect key="frame" x="115" y="30" width="151" height="20"/>
+                        <rect key="frame" x="115" y="15" width="151" height="20"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20" id="hHR-3f-Z3q"/>
                         </constraints>
@@ -48,8 +48,8 @@
                     <constraint firstAttribute="trailing" secondItem="yI5-OS-z1j" secondAttribute="trailing" constant="30" id="Kdk-dI-9Ot"/>
                     <constraint firstItem="bTj-Vh-uXB" firstAttribute="top" secondItem="ASP-Au-K89" secondAttribute="top" id="MmJ-Oq-aB2"/>
                     <constraint firstItem="yI5-OS-z1j" firstAttribute="top" secondItem="bTj-Vh-uXB" secondAttribute="bottom" constant="13" id="Wq8-Pz-VhA"/>
-                    <constraint firstAttribute="bottom" secondItem="yI5-OS-z1j" secondAttribute="bottom" id="mmb-N9-eTf"/>
-                    <constraint firstItem="ASP-Au-K89" firstAttribute="top" secondItem="q2h-pn-fBo" secondAttribute="top" constant="30" id="tP9-vf-fhS"/>
+                    <constraint firstAttribute="bottom" secondItem="yI5-OS-z1j" secondAttribute="bottom" constant="15" id="mmb-N9-eTf"/>
+                    <constraint firstItem="ASP-Au-K89" firstAttribute="top" secondItem="q2h-pn-fBo" secondAttribute="top" constant="15" id="tP9-vf-fhS"/>
                     <constraint firstItem="ASP-Au-K89" firstAttribute="leading" secondItem="q2h-pn-fBo" secondAttribute="leading" constant="30" id="xr0-X0-QbQ"/>
                     <constraint firstItem="bTj-Vh-uXB" firstAttribute="leading" secondItem="ASP-Au-K89" secondAttribute="trailing" constant="25" id="xrd-n1-cAa"/>
                 </constraints>
