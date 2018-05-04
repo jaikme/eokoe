@@ -10,23 +10,14 @@ import Foundation
 import Moya
 
 public struct OffsetModel {
-    public let start: Int = 0
-    public let limit: Int = 10
-}
-
-// MARK: - Provider setup
-private func JSONResponseDataFormatter(_ data: Data) -> Data {
-    do {
-        let dataAsJSON = try JSONSerialization.jsonObject(with: data)
-        let prettyData =  try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
-        return prettyData
-    } catch {
-        return data // fallback to original data if it can't be serialized.
+    public let start: Int
+    public let limit: Int
+    
+    init(start: Int = 0, limit: Int = 10) {
+        self.start = start
+        self.limit = limit
     }
 }
-
-let EokoeTestProvider = MoyaProvider<EokoeTestAPI>(plugins: [NetworkLoggerPlugin(verbose: false, responseDataFormatter: JSONResponseDataFormatter)])
-
 
 // MARK: - Provider support
 private extension String {
@@ -37,6 +28,7 @@ private extension String {
 
 public enum EokoeTestAPI {
     case users(OffsetModel)
+    case userDetails(id: String)
 }
 
 extension EokoeTestAPI : TargetType {
@@ -53,6 +45,8 @@ extension EokoeTestAPI : TargetType {
         switch self {
         case .users(let model):
             return "/users?start=\(model.start)&limit=\(model.limit)"
+        case .userDetails(let id):
+            return "/user/\(id)"
         }
     }
     
@@ -62,18 +56,25 @@ extension EokoeTestAPI : TargetType {
     
     public var sampleData: Data {
         #if DEBUG
-        switch self {
-        case .users(let model):
-            let json = "{\"pagination\":{\"limit\":\"\(model.limit)\",\"start\":\"\(model.limit + model.start)\"}, \"results\":[{}]}"
-            return json.data(using: .utf8)!
-        }
+            switch self {
+            case .users(let model):
+                let json = "{\"pagination\":{\"limit\":\"\(model.limit)\",\"start\":\"\(model.limit + model.start)\"}, \"results\":[{}]}"
+                return json.data(using: .utf8)!
+            case .userDetails(_):
+                return Data()
+            }
         #else
-        return Data()
+            return Data()
         #endif
     }
     
     public var task: Task {
-        return .requestPlain
+        switch self {
+        case .users(let model):
+            return .requestParameters(parameters: ["start": model.start, "limit": model.limit], encoding: URLEncoding.queryString)
+        case .userDetails(_):
+            return .requestPlain
+        }
     }
     
     public var headers: [String : String]? {
