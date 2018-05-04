@@ -43,8 +43,8 @@ extension EokoeTestAPI : TargetType {
     
     public var path: String {
         switch self {
-        case .users(let model):
-            return "/users?start=\(model.start)&limit=\(model.limit)"
+        case .users(_):
+            return "/users"
         case .userDetails(let id):
             return "/user/\(id)"
         }
