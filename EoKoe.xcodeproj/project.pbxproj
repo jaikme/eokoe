@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		5D460294209B8D1B00366879 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D460293209B8D1B00366879 /* Alamofire.framework */; };
 		5D460296209B8D2F00366879 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D460295209B8D2F00366879 /* Result.framework */; };
+		5D46029A209B9B7800366879 /* APIResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D460299209B9B7800366879 /* APIResources.swift */; };
+		5D46029C209B9B8400366879 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D46029B209B9B8400366879 /* Strings.swift */; };
+		5D46029E209B9B9600366879 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D46029D209B9B9600366879 /* Assets.swift */; };
+		5D4602A2209BA16400366879 /* EokoeTestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4602A1209BA16400366879 /* EokoeTestAPI.swift */; };
+		5D4602A5209BA8A500366879 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4602A4209BA8A500366879 /* Logger.swift */; };
+		5D4602A7209BC74400366879 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4602A6209BC74400366879 /* JSON.swift */; };
+		5D4602AA209BC87E00366879 /* ErrorLogStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4602A9209BC87E00366879 /* ErrorLogStrings.swift */; };
 		5DB65DD3209B850700B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
 		5DB65DD4209B857200B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
 		5DB65DD5209B857600B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
@@ -49,6 +56,13 @@
 /* Begin PBXFileReference section */
 		5D460293209B8D1B00366879 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		5D460295209B8D2F00366879 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		5D460299209B9B7800366879 /* APIResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResources.swift; sourceTree = "<group>"; };
+		5D46029B209B9B8400366879 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		5D46029D209B9B9600366879 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		5D4602A1209BA16400366879 /* EokoeTestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EokoeTestAPI.swift; sourceTree = "<group>"; };
+		5D4602A4209BA8A500366879 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		5D4602A6209BC74400366879 /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		5D4602A9209BC87E00366879 /* ErrorLogStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorLogStrings.swift; sourceTree = "<group>"; };
 		5DB65DD2209B850700B728B2 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		E43A433220993684003EF7B7 /* EoKoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EoKoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A433520993684003EF7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +119,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D460297209B935100366879 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E43A433F20993687003EF7B7 /* Assets.xcassets */,
+				5D460299209B9B7800366879 /* APIResources.swift */,
+				5D46029B209B9B8400366879 /* Strings.swift */,
+				5D4602A9209BC87E00366879 /* ErrorLogStrings.swift */,
+				5D46029D209B9B9600366879 /* Assets.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5D460298209B938300366879 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E43A433C20993684003EF7B7 /* EoKoe.xcdatamodeld */,
+				E43A434420993687003EF7B7 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5D4602A3209BA89300366879 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		E43A432920993684003EF7B7 = {
 			isa = PBXGroup;
 			children = (
@@ -132,12 +174,11 @@
 				E43A4368209996BA003EF7B7 /* Common */,
 				E43A436720998F68003EF7B7 /* Networking */,
 				E43A4366209979A5003EF7B7 /* App */,
-				E43A433520993684003EF7B7 /* AppDelegate.swift */,
+				5D4602A3209BA89300366879 /* Adapter */,
+				5D460297209B935100366879 /* Resources */,
+				5D460298209B938300366879 /* Supporting Files */,
 				E43A433920993684003EF7B7 /* Main.storyboard */,
-				E43A433F20993687003EF7B7 /* Assets.xcassets */,
 				E43A434120993687003EF7B7 /* LaunchScreen.storyboard */,
-				E43A434420993687003EF7B7 /* Info.plist */,
-				E43A433C20993684003EF7B7 /* EoKoe.xcdatamodeld */,
 			);
 			path = EoKoe;
 			sourceTree = "<group>";
@@ -164,6 +205,7 @@
 		E43A4366209979A5003EF7B7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				E43A433520993684003EF7B7 /* AppDelegate.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -171,6 +213,7 @@
 		E43A436720998F68003EF7B7 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				5D4602A1209BA16400366879 /* EokoeTestAPI.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -181,6 +224,8 @@
 				E43A436D20999B1D003EF7B7 /* ViewControllerReusable.swift */,
 				E43A43692099973C003EF7B7 /* ViewControllerCreatable.swift */,
 				E43A436B20999765003EF7B7 /* ViewCreatable.swift */,
+				5D4602A6209BC74400366879 /* JSON.swift */,
+				5D4602A4209BA8A500366879 /* Logger.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -385,11 +430,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D4602A5209BA8A500366879 /* Logger.swift in Sources */,
+				5D4602AA209BC87E00366879 /* ErrorLogStrings.swift in Sources */,
+				5D46029A209B9B7800366879 /* APIResources.swift in Sources */,
+				5D4602A7209BC74400366879 /* JSON.swift in Sources */,
 				E43A433E20993684003EF7B7 /* EoKoe.xcdatamodeld in Sources */,
+				5D46029E209B9B9600366879 /* Assets.swift in Sources */,
+				5D4602A2209BA16400366879 /* EokoeTestAPI.swift in Sources */,
 				E43A436A2099973C003EF7B7 /* ViewControllerCreatable.swift in Sources */,
 				E43A436C20999765003EF7B7 /* ViewCreatable.swift in Sources */,
 				E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */,
 				E43A436E20999B1D003EF7B7 /* ViewControllerReusable.swift in Sources */,
+				5D46029C209B9B8400366879 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
