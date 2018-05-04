@@ -25,7 +25,7 @@ private func JSONResponseDataFormatter(_ data: Data) -> Data {
     }
 }
 
-let EokoeTestProvider = MoyaProvider<EokoeTest>(plugins: [NetworkLoggerPlugin(verbose: false, responseDataFormatter: JSONResponseDataFormatter)])
+let EokoeTestProvider = MoyaProvider<EokoeTestAPI>(plugins: [NetworkLoggerPlugin(verbose: false, responseDataFormatter: JSONResponseDataFormatter)])
 
 
 // MARK: - Provider support
@@ -41,7 +41,7 @@ public enum EokoeTestAPI {
 
 extension EokoeTestAPI : TargetType {
     
-    var baseURL: URL {
+    public var baseURL: URL {
         guard let url = URL(string: APIResource.baseUrl.rawValue) else {
             fatalError(Logger.shared.log(for: .error(message: ErrorLogStrings.EokoeTest.inavlidAPIUrl)))
         }
@@ -49,18 +49,18 @@ extension EokoeTestAPI : TargetType {
         return url
     }
     
-    var path: String {
+    public var path: String {
         switch self {
         case .users(let model):
             return "/users?start=\(model.start)&limit=\(model.limit)"
         }
     }
     
-    var method: Moya.Method {
+    public var method: Moya.Method {
         return .get
     }
     
-    var sampleData: Data {
+    public var sampleData: Data {
         #if DEBUG
         switch self {
         case .users(let model):
@@ -72,11 +72,11 @@ extension EokoeTestAPI : TargetType {
         #endif
     }
     
-    var task: Task {
+    public var task: Task {
         return .requestPlain
     }
     
-    var headers: [String : String]? {
+    public var headers: [String : String]? {
         return [
             APIResource.XApiKeyIdentifier: APIResource.XApiKey,
             APIResource.contentTypeIdentifier: APIResource.contentTypeValue
