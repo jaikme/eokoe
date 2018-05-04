@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4pR-Li-JTK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xkz-az-X3G">
+            <objects>
+                <navigationController id="4pR-Li-JTK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="uvf-F0-Sh2">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.97647058823529409" green="0.32941176470588235" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Dyt-uZ-rnz" kind="relationship" relationship="rootViewController" id="0TC-0r-29u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4yq-PU-UlG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-964" y="190"/>
+        </scene>
+        <!--UsersList-->
+        <scene sceneID="19N-1Q-eg2">
+            <objects>
+                <viewController title="UsersList" automaticallyAdjustsScrollViewInsets="NO" id="Dyt-uZ-rnz" customClass="UsersListController" customModule="EoKoe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfN-By-lTG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCK-53-Fhz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uCK-53-Fhz" firstAttribute="trailing" secondItem="bbe-L1-C4p" secondAttribute="trailing" id="J8p-R5-nm3"/>
+                            <constraint firstItem="uCK-53-Fhz" firstAttribute="leading" secondItem="bbe-L1-C4p" secondAttribute="leading" id="Ngy-BV-BwM"/>
+                            <constraint firstItem="uCK-53-Fhz" firstAttribute="bottom" secondItem="bbe-L1-C4p" secondAttribute="bottom" id="rWS-Uu-4Mc"/>
+                            <constraint firstItem="uCK-53-Fhz" firstAttribute="top" secondItem="bbe-L1-C4p" secondAttribute="top" id="uco-wS-hPC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bbe-L1-C4p"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Usuários" id="PV9-fd-Sgn"/>
+                    <connections>
+                        <outlet property="tableView" destination="uCK-53-Fhz" id="sNc-Rl-JWX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Svu-gz-0tW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.40000000000001" y="188.45577211394306"/>
+        </scene>
+    </scenes>
+</document>

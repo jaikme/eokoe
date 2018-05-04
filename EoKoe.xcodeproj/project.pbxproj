@@ -34,6 +34,8 @@
 		E43A43782099A13A003EF7B7 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43742099A12C003EF7B7 /* Nimble.framework */; };
 		E43A43792099A13A003EF7B7 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E43A43762099A130003EF7B7 /* Quick.framework */; };
 		E43A437D2099A9BE003EF7B7 /* EoKoeProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */; };
+		E4A6F2E0209C0BD000837954 /* UsersList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A6F2DF209C0BD000837954 /* UsersList.storyboard */; };
+		E4A6F2E2209C0DC700837954 /* UsersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E1209C0DC700837954 /* UsersListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		E43A43742099A12C003EF7B7 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		E43A43762099A130003EF7B7 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EoKoeProviderSpec.swift; sourceTree = "<group>"; };
+		E4A6F2DF209C0BD000837954 /* UsersList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersList.storyboard; sourceTree = "<group>"; };
+		E4A6F2E1209C0DC700837954 /* UsersListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +168,7 @@
 		E43A433420993684003EF7B7 /* EoKoe */ = {
 			isa = PBXGroup;
 			children = (
+				E4A6F2DE209C0AC300837954 /* UsersList */,
 				E43A4368209996BA003EF7B7 /* Common */,
 				E43A436720998F68003EF7B7 /* Networking */,
 				E43A4366209979A5003EF7B7 /* App */,
@@ -232,6 +237,15 @@
 				E43A43742099A12C003EF7B7 /* Nimble.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4A6F2DE209C0AC300837954 /* UsersList */ = {
+			isa = PBXGroup;
+			children = (
+				E4A6F2DF209C0BD000837954 /* UsersList.storyboard */,
+				E4A6F2E1209C0DC700837954 /* UsersListController.swift */,
+			);
+			path = UsersList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E43A434320993687003EF7B7 /* LaunchScreen.storyboard in Resources */,
+				E4A6F2E0209C0BD000837954 /* UsersList.storyboard in Resources */,
 				E43A434020993687003EF7B7 /* Assets.xcassets in Resources */,
 				E43A433B20993684003EF7B7 /* Main.storyboard in Resources */,
 			);
@@ -432,6 +447,7 @@
 				E43A436A2099973C003EF7B7 /* ViewControllerCreatable.swift in Sources */,
 				E43A436C20999765003EF7B7 /* ViewCreatable.swift in Sources */,
 				E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */,
+				E4A6F2E2209C0DC700837954 /* UsersListController.swift in Sources */,
 				E43A436E20999B1D003EF7B7 /* ViewControllerReusable.swift in Sources */,
 				5D46029C209B9B8400366879 /* Strings.swift in Sources */,
 			);
