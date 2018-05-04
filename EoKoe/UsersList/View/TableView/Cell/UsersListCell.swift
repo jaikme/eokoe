@@ -37,7 +37,7 @@ extension UsersListCell {
         userIMage.layer.masksToBounds = true
         userIMage.image = UIImage(named: "Profile")
         
-        if let imageUrl = model.picture["mediumgit"], let url = URL(string: imageUrl) {
+        if let imageUrl = model.picture["medium"], let url = URL(string: imageUrl) {
             self.userIMage.kf.setImage(with: url)
         }
     }

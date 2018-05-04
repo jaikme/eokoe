@@ -41,8 +41,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCK-53-Fhz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                            <tableView contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uCK-53-Fhz">
+                                <rect key="frame" x="0.0" y="15" width="375" height="588"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -51,7 +51,7 @@
                             <constraint firstItem="uCK-53-Fhz" firstAttribute="trailing" secondItem="bbe-L1-C4p" secondAttribute="trailing" id="J8p-R5-nm3"/>
                             <constraint firstItem="uCK-53-Fhz" firstAttribute="leading" secondItem="bbe-L1-C4p" secondAttribute="leading" id="Ngy-BV-BwM"/>
                             <constraint firstItem="uCK-53-Fhz" firstAttribute="bottom" secondItem="bbe-L1-C4p" secondAttribute="bottom" id="rWS-Uu-4Mc"/>
-                            <constraint firstItem="uCK-53-Fhz" firstAttribute="top" secondItem="bbe-L1-C4p" secondAttribute="top" id="uco-wS-hPC"/>
+                            <constraint firstItem="uCK-53-Fhz" firstAttribute="top" secondItem="bbe-L1-C4p" secondAttribute="top" constant="15" id="uco-wS-hPC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bbe-L1-C4p"/>
                     </view>

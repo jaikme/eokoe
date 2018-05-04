@@ -58,7 +58,35 @@ extension EokoeTestAPI : TargetType {
         #if DEBUG
             switch self {
             case .users(let model):
-                let json = "{\"pagination\":{\"limit\":\"\(model.limit)\",\"start\":\"\(model.limit + model.start)\"}, \"results\":[{}]}"
+                // TODO: Load from external file
+                let json = """
+                    {
+                        "pagination": {
+                            "limit": \(model.limit),
+                            "start": \(model.limit + model.start)
+                        },
+                        "results": [
+                            {
+                                "avg_customer": 3.47404183724844,
+                                "bio": {
+                                    "mini": "Rump tri-tip beef ball tip porchetta. Cow meatloaf rump strip steak ham."
+                                },
+                                "id": 1,
+                                "name": {
+                                    "first": "Loiva",
+                                    "last": "Nunes",
+                                    "title": "Mrs"
+                                },
+                                "nat": "BR",
+                                "picture": {
+                                    "large": "https://randomuser.me/api/portraits/women/90.jpg",
+                                    "medium": "https://randomuser.me/api/portraits/med/women/90.jpg",
+                                    "thumbnail": "https://randomuser.me/api/portraits/thumb/women/90.jpg"
+                                }
+                            }
+                        ]
+                    }
+                """
                 return json.data(using: .utf8)!
             case .userDetails(_):
                 return Data()
