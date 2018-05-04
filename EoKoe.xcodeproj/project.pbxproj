@@ -37,6 +37,8 @@
 		E4A6F2E2209C0DC700837954 /* UsersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E1209C0DC700837954 /* UsersListController.swift */; };
 		E4A6F2E4209C120E00837954 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E3209C120E00837954 /* Storyboard.swift */; };
 		E4A6F2E6209C17FC00837954 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E5209C17FC00837954 /* AppColors.swift */; };
+		E4A6F2E8209C1CF600837954 /* UsersListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E7209C1CF600837954 /* UsersListInteractor.swift */; };
+		E4A6F2EA209C1DAE00837954 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E9209C1DAE00837954 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		E4A6F2E1209C0DC700837954 /* UsersListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListController.swift; sourceTree = "<group>"; };
 		E4A6F2E3209C120E00837954 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
 		E4A6F2E5209C17FC00837954 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		E4A6F2E7209C1CF600837954 /* UsersListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListInteractor.swift; sourceTree = "<group>"; };
+		E4A6F2E9209C1DAE00837954 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				E43A433520993684003EF7B7 /* AppDelegate.swift */,
+				E4A6F2E9209C1DAE00837954 /* Notifications.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			children = (
 				E4A6F2DF209C0BD000837954 /* UsersList.storyboard */,
 				E4A6F2E1209C0DC700837954 /* UsersListController.swift */,
+				E4A6F2E7209C1CF600837954 /* UsersListInteractor.swift */,
 			);
 			path = UsersList;
 			sourceTree = "<group>";
@@ -440,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D4602A5209BA8A500366879 /* Logger.swift in Sources */,
+				E4A6F2EA209C1DAE00837954 /* Notifications.swift in Sources */,
 				5D4602AA209BC87E00366879 /* ErrorLogStrings.swift in Sources */,
 				5D46029A209B9B7800366879 /* APIResources.swift in Sources */,
 				E4A6F2E6209C17FC00837954 /* AppColors.swift in Sources */,
@@ -452,6 +459,7 @@
 				E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */,
 				E4A6F2E4209C120E00837954 /* Storyboard.swift in Sources */,
 				E4A6F2E2209C0DC700837954 /* UsersListController.swift in Sources */,
+				E4A6F2E8209C1CF600837954 /* UsersListInteractor.swift in Sources */,
 				E43A436E20999B1D003EF7B7 /* ViewControllerReusable.swift in Sources */,
 				5D46029C209B9B8400366879 /* Strings.swift in Sources */,
 			);
