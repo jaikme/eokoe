@@ -13,6 +13,8 @@ final class UsersListController : UIViewController {
     
     @IBOutlet private weak var tableView: UITableView!
     
+    private var shouldShowStatusBar: Bool = true
+    
     // MARK: Object lifecycle
     
     required init?(coder aDecoder: NSCoder) {
@@ -24,9 +26,35 @@ final class UsersListController : UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAppearance()
         setupTableView()
+        updateStatusBar()
     }
     
+}
+
+// MARK: Status bar config
+
+extension UsersListController {
+    
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
+        return .slide
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return !shouldShowStatusBar
+    }
+    
+    private func updateStatusBar(isVisible: Bool = true) {
+        shouldShowStatusBar = isVisible
+        UIView.animate(withDuration: 0.3) {
+            self.setNeedsStatusBarAppearanceUpdate()
+        }
+    }
 }
 
 // MARK: Setups
@@ -35,6 +63,10 @@ extension UsersListController {
     
     private func setup() {
 
+    }
+    
+    private func setupAppearance() {
+        navigationController?.navigationBar.barTintColor = AppColors.usersListNavbarColor
     }
     
     private func setupTableView() {
