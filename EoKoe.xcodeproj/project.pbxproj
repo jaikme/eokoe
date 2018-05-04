@@ -140,13 +140,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		5D4602A3209BA89300366879 /* Adapter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Adapter;
-			sourceTree = "<group>";
-		};
 		E43A432920993684003EF7B7 = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +167,6 @@
 				E43A4368209996BA003EF7B7 /* Common */,
 				E43A436720998F68003EF7B7 /* Networking */,
 				E43A4366209979A5003EF7B7 /* App */,
-				5D4602A3209BA89300366879 /* Adapter */,
 				5D460297209B935100366879 /* Resources */,
 				5D460298209B938300366879 /* Supporting Files */,
 				E43A433920993684003EF7B7 /* Main.storyboard */,
