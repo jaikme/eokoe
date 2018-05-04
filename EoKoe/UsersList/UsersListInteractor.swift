@@ -10,6 +10,11 @@ import UIKit
 
 final class UsersListInteractor {
     
+    // MARK: - Properties
+    
+    var presenter: UsersListView?
+    
+    
     // MARK: Object lifecycle
     
     init() {
@@ -23,12 +28,13 @@ final class UsersListInteractor {
     
 }
 
-// MARK: Private methods
+// MARK: Methods
 
 extension UsersListInteractor {
     
-    
-    @objc private func loadUsers() {
-    
+    @objc func loadUsers() {
+        DataService.usersList(with: OffsetModel(start: 0, limit: 10)) { (response) in
+            
+        }
     }
 }

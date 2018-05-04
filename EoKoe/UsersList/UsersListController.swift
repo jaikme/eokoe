@@ -11,10 +11,16 @@ import UIKit
 
 final class UsersListController : UIViewController {
     
-    @IBOutlet private weak var tableView: UITableView!
-    
+    // MARK: - Properties
     private var shouldShowStatusBar: Bool = true
+    private lazy var presenter: UsersListPresenter = {
+        return UsersListPresenter(controller: self)
+    }()
+    var interactor: UsersListInteractor?
     
+    // MARK: - Outlets
+    @IBOutlet private weak var tableView: UITableView!
+
     // MARK: Object lifecycle
     
     required init?(coder aDecoder: NSCoder) {
@@ -29,6 +35,7 @@ final class UsersListController : UIViewController {
         setupAppearance()
         setupTableView()
         updateStatusBar()
+        fetchUsers()
     }
     
 }
@@ -62,7 +69,12 @@ extension UsersListController {
 extension UsersListController {
     
     private func setup() {
-
+        presenter = UsersListPresenter(controller: self)
+        
+        let interactor = UsersListInteractor()
+            interactor.presenter = presenter
+        
+        self.interactor = interactor
     }
     
     private func setupAppearance() {
@@ -81,4 +93,15 @@ extension UsersListController {
         
     }
     
+}
+
+// MARK: Data handlers
+
+extension UsersListController {
+    
+    func fetchUsers() {
+        DispatchQueue.global(qos: .background).async {
+            self.interactor?.loadUsers()
+        }
+    }
 }
