@@ -8,14 +8,21 @@
 
 import UIKit
 
+protocol UsersListDisplayMethods: class {
+    func diplayFetchedUsers(results: [Result])
+    var list: [Result] { get }
+}
 
 final class UsersListController : UIViewController {
     
     // MARK: - Properties
+    internal var usersListModel = [Result]()
     private var shouldShowStatusBar: Bool = true
     private lazy var presenter: UsersListPresenter = {
         return UsersListPresenter(controller: self)
     }()
+    internal let dataSource = UsersListDataSource()
+    internal let delegate = UsersListDelegate()
     var interactor: UsersListInteractor?
     
     // MARK: - Outlets
@@ -87,18 +94,41 @@ extension UsersListController {
         tableView.separatorStyle = .none
         tableView.tableFooterView?.isHidden = true
         registerCells()
+        setupDataSource()
+        setupDelegate()
     }
     
     private func registerCells() {
-        
+        tableView.register(cellNib: UsersListCell.self)
+    }
+    
+    private func setupDataSource() {
+        dataSource.view = self
+        tableView.dataSource = dataSource
+    }
+    
+    private func setupDelegate() {
+        delegate.view = self
+        tableView.delegate = delegate
     }
     
 }
 
 // MARK: Data handlers
 
-extension UsersListController {
+extension UsersListController: UsersListDisplayMethods {
     
+    var list: [Result] {
+        return self.usersListModel
+    }
+    
+    func diplayFetchedUsers(results: [Result]) {
+        self.usersListModel = results
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
+    }
+
     func fetchUsers() {
         DispatchQueue.global(qos: .background).async {
             self.interactor?.loadUsers()

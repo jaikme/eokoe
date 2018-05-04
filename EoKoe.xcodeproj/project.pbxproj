@@ -42,11 +42,16 @@
 		E4A6F2ED209C1EA200837954 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2EC209C1EA200837954 /* DataService.swift */; };
 		E4A6F2EF209C1F4500837954 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2EE209C1F4500837954 /* Provider.swift */; };
 		E4A6F2F2209C29E700837954 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2F1209C29E700837954 /* UsersModel.swift */; };
-		E4A6F2F4209C2A4900837954 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A6F2F3209C2A4900837954 /* ObjectMapper.framework */; };
 		E4A6F2F6209C2D7200837954 /* UsersListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2F5209C2D7200837954 /* UsersListPresenter.swift */; };
 		E4A6F2F9209C2DA800837954 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2F8209C2DA800837954 /* UsersListView.swift */; };
 		E4A6F2FE209C2EC700837954 /* UsersListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A6F2FD209C2EC700837954 /* UsersListCell.xib */; };
 		E4A6F300209C30A700837954 /* UsersListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2FF209C30A700837954 /* UsersListCell.swift */; };
+		E4A6F302209C540900837954 /* NibCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F301209C540900837954 /* NibCreatable.swift */; };
+		E4A6F304209C542A00837954 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F303209C542A00837954 /* Reusable.swift */; };
+		E4A6F306209C547700837954 /* TableViewReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F305209C547700837954 /* TableViewReusable.swift */; };
+		E4A6F308209C556400837954 /* UsersListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F307209C556400837954 /* UsersListDataSource.swift */; };
+		E4A6F30A209C557600837954 /* UsersListDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F309209C557600837954 /* UsersListDelegate.swift */; };
+		E4A6F30C209C5FCF00837954 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A6F30B209C5FCE00837954 /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +114,12 @@
 		E4A6F2F8209C2DA800837954 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		E4A6F2FD209C2EC700837954 /* UsersListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UsersListCell.xib; sourceTree = "<group>"; };
 		E4A6F2FF209C30A700837954 /* UsersListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListCell.swift; sourceTree = "<group>"; };
+		E4A6F301209C540900837954 /* NibCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibCreatable.swift; sourceTree = "<group>"; };
+		E4A6F303209C542A00837954 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		E4A6F305209C547700837954 /* TableViewReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewReusable.swift; sourceTree = "<group>"; };
+		E4A6F307209C556400837954 /* UsersListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListDataSource.swift; sourceTree = "<group>"; };
+		E4A6F309209C557600837954 /* UsersListDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListDelegate.swift; sourceTree = "<group>"; };
+		E4A6F30B209C5FCE00837954 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +130,7 @@
 				5DB65DD3209B850700B728B2 /* Moya.framework in Frameworks */,
 				5D460294209B8D1B00366879 /* Alamofire.framework in Frameworks */,
 				5D460296209B8D2F00366879 /* Result.framework in Frameworks */,
-				E4A6F2F4209C2A4900837954 /* ObjectMapper.framework in Frameworks */,
+				E4A6F30C209C5FCF00837954 /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +262,9 @@
 				5D4602A4209BA8A500366879 /* Logger.swift */,
 				E4A6F2E3209C120E00837954 /* Storyboard.swift */,
 				E4A6F2E5209C17FC00837954 /* AppColors.swift */,
+				E4A6F301209C540900837954 /* NibCreatable.swift */,
+				E4A6F303209C542A00837954 /* Reusable.swift */,
+				E4A6F305209C547700837954 /* TableViewReusable.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -258,6 +272,7 @@
 		E43A43732099A12C003EF7B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E4A6F30B209C5FCE00837954 /* Kingfisher.framework */,
 				E4A6F2F3209C2A4900837954 /* ObjectMapper.framework */,
 				5D460295209B8D2F00366879 /* Result.framework */,
 				5D460293209B8D1B00366879 /* Alamofire.framework */,
@@ -317,6 +332,8 @@
 			isa = PBXGroup;
 			children = (
 				E4A6F2FC209C2EB100837954 /* Cell */,
+				E4A6F307209C556400837954 /* UsersListDataSource.swift */,
+				E4A6F309209C557600837954 /* UsersListDelegate.swift */,
 			);
 			path = TableView;
 			sourceTree = "<group>";
@@ -471,6 +488,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			name = "Run Script Carthage";
 			outputPaths = (
@@ -524,12 +542,15 @@
 				E4A6F2EA209C1DAE00837954 /* Notifications.swift in Sources */,
 				5D4602AA209BC87E00366879 /* ErrorLogStrings.swift in Sources */,
 				5D46029A209B9B7800366879 /* APIResources.swift in Sources */,
+				E4A6F308209C556400837954 /* UsersListDataSource.swift in Sources */,
+				E4A6F304209C542A00837954 /* Reusable.swift in Sources */,
 				E4A6F2E6209C17FC00837954 /* AppColors.swift in Sources */,
 				5D4602A7209BC74400366879 /* JSON.swift in Sources */,
 				E43A433E20993684003EF7B7 /* EoKoe.xcdatamodeld in Sources */,
 				5D46029E209B9B9600366879 /* Assets.swift in Sources */,
 				E4A6F300209C30A700837954 /* UsersListCell.swift in Sources */,
 				5D4602A2209BA16400366879 /* EokoeTestAPI.swift in Sources */,
+				E4A6F306209C547700837954 /* TableViewReusable.swift in Sources */,
 				E4A6F2F6209C2D7200837954 /* UsersListPresenter.swift in Sources */,
 				E4A6F2ED209C1EA200837954 /* DataService.swift in Sources */,
 				E4A6F2F9209C2DA800837954 /* UsersListView.swift in Sources */,
@@ -537,12 +558,14 @@
 				E43A436A2099973C003EF7B7 /* ViewControllerCreatable.swift in Sources */,
 				E43A436C20999765003EF7B7 /* ViewCreatable.swift in Sources */,
 				E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */,
+				E4A6F302209C540900837954 /* NibCreatable.swift in Sources */,
 				E4A6F2E4209C120E00837954 /* Storyboard.swift in Sources */,
 				E4A6F2E2209C0DC700837954 /* UsersListController.swift in Sources */,
 				E4A6F2E8209C1CF600837954 /* UsersListInteractor.swift in Sources */,
 				E43A436E20999B1D003EF7B7 /* ViewControllerReusable.swift in Sources */,
 				E4A6F2F2209C29E700837954 /* UsersModel.swift in Sources */,
 				5D46029C209B9B8400366879 /* Strings.swift in Sources */,
+				E4A6F30A209C557600837954 /* UsersListDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

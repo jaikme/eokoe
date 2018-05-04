@@ -17,7 +17,6 @@ final class DataService {
                 do {
                     let usersResults = try moyaResponse.tryParseUsers()
                     completion(usersResults)
-                    
                 }
                 catch let error {
                     Logger.shared.log(for: .error(message: "Error load or parse usersList: \(error.localizedDescription)"))

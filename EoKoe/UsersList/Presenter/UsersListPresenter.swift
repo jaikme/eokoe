@@ -9,9 +9,13 @@
 import Foundation
 
 final class UsersListPresenter : UsersListView {
-
+    
     private weak var controller: UsersListController?
     
+    func showLoadedUsers(with items: Users) {
+        self.controller?.diplayFetchedUsers(results: items.results)
+    }
+
     public init(controller: UsersListController) {
         self.controller = controller
     }

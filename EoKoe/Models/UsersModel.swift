@@ -20,5 +20,6 @@ struct Users: Codable {
 struct Result: Codable {
     let id: Int
     let bio: [String: String]
+    let name: [String: String]
     let picture: [String: String]
 }

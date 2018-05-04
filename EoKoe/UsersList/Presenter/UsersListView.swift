@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol UsersListView : class {
-
+protocol UsersListView : class {
+    func showLoadedUsers (with items: Users)
 }
