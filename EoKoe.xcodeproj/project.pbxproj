@@ -20,7 +20,6 @@
 		5DB65DD4209B857200B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
 		5DB65DD5209B857600B728B2 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB65DD2209B850700B728B2 /* Moya.framework */; };
 		E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A433520993684003EF7B7 /* AppDelegate.swift */; };
-		E43A433B20993684003EF7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43A433920993684003EF7B7 /* Main.storyboard */; };
 		E43A433E20993684003EF7B7 /* EoKoe.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E43A433C20993684003EF7B7 /* EoKoe.xcdatamodeld */; };
 		E43A434020993687003EF7B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E43A433F20993687003EF7B7 /* Assets.xcassets */; };
 		E43A434320993687003EF7B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43A434120993687003EF7B7 /* LaunchScreen.storyboard */; };
@@ -36,6 +35,8 @@
 		E43A437D2099A9BE003EF7B7 /* EoKoeProviderSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */; };
 		E4A6F2E0209C0BD000837954 /* UsersList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A6F2DF209C0BD000837954 /* UsersList.storyboard */; };
 		E4A6F2E2209C0DC700837954 /* UsersListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E1209C0DC700837954 /* UsersListController.swift */; };
+		E4A6F2E4209C120E00837954 /* Storyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E3209C120E00837954 /* Storyboard.swift */; };
+		E4A6F2E6209C17FC00837954 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A6F2E5209C17FC00837954 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,7 +69,6 @@
 		5DB65DD2209B850700B728B2 /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Carthage/Build/iOS/Moya.framework; sourceTree = "<group>"; };
 		E43A433220993684003EF7B7 /* EoKoe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EoKoe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43A433520993684003EF7B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E43A433A20993684003EF7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E43A433D20993684003EF7B7 /* EoKoe.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EoKoe.xcdatamodel; sourceTree = "<group>"; };
 		E43A433F20993687003EF7B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E43A434220993687003EF7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +87,8 @@
 		E43A437C2099A9BE003EF7B7 /* EoKoeProviderSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EoKoeProviderSpec.swift; sourceTree = "<group>"; };
 		E4A6F2DF209C0BD000837954 /* UsersList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UsersList.storyboard; sourceTree = "<group>"; };
 		E4A6F2E1209C0DC700837954 /* UsersListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListController.swift; sourceTree = "<group>"; };
+		E4A6F2E3209C120E00837954 /* Storyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboard.swift; sourceTree = "<group>"; };
+		E4A6F2E5209C17FC00837954 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,12 +171,11 @@
 			isa = PBXGroup;
 			children = (
 				E4A6F2DE209C0AC300837954 /* UsersList */,
-				E43A4368209996BA003EF7B7 /* Common */,
 				E43A436720998F68003EF7B7 /* Networking */,
 				E43A4366209979A5003EF7B7 /* App */,
 				5D460297209B935100366879 /* Resources */,
+				E43A4368209996BA003EF7B7 /* Common */,
 				5D460298209B938300366879 /* Supporting Files */,
-				E43A433920993684003EF7B7 /* Main.storyboard */,
 				E43A434120993687003EF7B7 /* LaunchScreen.storyboard */,
 			);
 			path = EoKoe;
@@ -223,6 +224,8 @@
 				E43A436B20999765003EF7B7 /* ViewCreatable.swift */,
 				5D4602A6209BC74400366879 /* JSON.swift */,
 				5D4602A4209BA8A500366879 /* Logger.swift */,
+				E4A6F2E3209C120E00837954 /* Storyboard.swift */,
+				E4A6F2E5209C17FC00837954 /* AppColors.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -358,7 +361,6 @@
 				E43A434320993687003EF7B7 /* LaunchScreen.storyboard in Resources */,
 				E4A6F2E0209C0BD000837954 /* UsersList.storyboard in Resources */,
 				E43A434020993687003EF7B7 /* Assets.xcassets in Resources */,
-				E43A433B20993684003EF7B7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +442,7 @@
 				5D4602A5209BA8A500366879 /* Logger.swift in Sources */,
 				5D4602AA209BC87E00366879 /* ErrorLogStrings.swift in Sources */,
 				5D46029A209B9B7800366879 /* APIResources.swift in Sources */,
+				E4A6F2E6209C17FC00837954 /* AppColors.swift in Sources */,
 				5D4602A7209BC74400366879 /* JSON.swift in Sources */,
 				E43A433E20993684003EF7B7 /* EoKoe.xcdatamodeld in Sources */,
 				5D46029E209B9B9600366879 /* Assets.swift in Sources */,
@@ -447,6 +450,7 @@
 				E43A436A2099973C003EF7B7 /* ViewControllerCreatable.swift in Sources */,
 				E43A436C20999765003EF7B7 /* ViewCreatable.swift in Sources */,
 				E43A433620993684003EF7B7 /* AppDelegate.swift in Sources */,
+				E4A6F2E4209C120E00837954 /* Storyboard.swift in Sources */,
 				E4A6F2E2209C0DC700837954 /* UsersListController.swift in Sources */,
 				E43A436E20999B1D003EF7B7 /* ViewControllerReusable.swift in Sources */,
 				5D46029C209B9B8400366879 /* Strings.swift in Sources */,
@@ -486,14 +490,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E43A433920993684003EF7B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E43A433A20993684003EF7B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E43A434120993687003EF7B7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
